@@ -1,11 +1,11 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch, Redirect, NavLink} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Redirect, NavLink } from 'react-router-dom';
 import Good from "./good/good";
 import Find from "./find/find";
 import Like from "./like/like";
-import Shopping from "./shopping.jsx/shopping";
+import Shopping from "./shopping/shopping";
 import Mine from "./mine/mine";
-import './App.css';
+import './App.styl';
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
           <Route path="/like" component={Like} />
           <Route path="/shopping" component={Shopping} />
           <Route path="/mine" component={Mine} />
-          <Redirect path="/" component={Good} />
+          <Redirect from="/" to="/good" />
         </div>
         <div className="youzan-tab">
           <div className="tab-item">
@@ -30,7 +30,7 @@ function App() {
           <div className="tab-item">
             <NavLink className="nav-link" to="/find" >
               <div className="tab-img"></div>
-              <span>发现</span> 
+              <span>发现</span>
             </NavLink>
           </div>
           <div className="tab-item">
