@@ -8,3 +8,4 @@ git log --pretty=oneline     日志内容变得简洁
 git reset --hard HEAD^^       返回上一个版本，几个^就是几个版本之前
 git reset --hard 文件ID的前五个字母
 asdfasdf
+错误的提交
